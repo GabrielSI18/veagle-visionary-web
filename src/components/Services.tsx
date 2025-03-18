@@ -1,6 +1,7 @@
 
 import React from 'react';
 import { Layout, BarChart2, ShoppingBag, Store, ArrowRight } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const Services = () => {
   const services = [
@@ -8,25 +9,25 @@ const Services = () => {
       title: "Landing Page Creation",
       description: "Optimized conversion pages to generate leads and sales.",
       icon: <Layout className="h-12 w-12 text-veagle-purple" />,
-      link: "#",
+      link: "/services/landing-page",
     },
     {
       title: "Paid Traffic Management",
       description: "Ad campaigns that maximize your ROI.",
       icon: <BarChart2 className="h-12 w-12 text-veagle-purple" />,
-      link: "#",
+      link: "/services/paid-traffic",
     },
     {
       title: "Online Store Creation",
       description: "Complete and customized online stores.",
       icon: <ShoppingBag className="h-12 w-12 text-veagle-purple" />,
-      link: "#",
+      link: "/services/store-creation",
     },
     {
       title: "Online Store Management",
       description: "Professional management to increase your sales.",
       icon: <Store className="h-12 w-12 text-veagle-purple" />,
-      link: "#",
+      link: "/services/store-management",
     },
   ];
 
@@ -58,13 +59,13 @@ const Services = () => {
                 <h3 className="text-xl font-semibold mb-3 text-gray-900">{service.title}</h3>
                 <p className="text-gray-600 mb-6">{service.description}</p>
               </div>
-              <a 
-                href={service.link} 
+              <Link 
+                to={service.link} 
                 className="inline-flex items-center text-veagle-purple hover:underline font-medium"
               >
                 Learn more
                 <ArrowRight size={16} className="ml-1" />
-              </a>
+              </Link>
             </div>
           ))}
         </div>
