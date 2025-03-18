@@ -88,9 +88,12 @@ const Hero = () => {
         <div className="flex justify-center items-center h-80 md:h-96 relative animate-fade-in-slow">
           <div 
             ref={logoRef} 
-            className="w-24 h-24 md:w-32 md:h-32 bg-veagle-purple rounded-xl flex items-center justify-center text-white font-bold text-2xl md:text-3xl relative z-10 animate-pulse-soft shadow-lg"
           >
-            Veagle
+          <img
+            src="/Veagle_Preta.webp" // Caminho relativo da imagem dentro da pasta public
+            alt="Logo Veagle"
+            className="h-14 w-32 object-contain" // Ajuste o tamanho para algo menor
+          />
           </div>
           
           {/* Orbiting Icons */}
