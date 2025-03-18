@@ -29,7 +29,7 @@ const Footer = () => {
               Digital solutions to boost your business. We specialize in
               creating impactful digital experiences that drive results.
             </p>
-            <div className="flex space-x-4">
+            {/* <div className="flex space-x-4">
               <a
                 href="#"
                 className="h-10 w-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-veagle-purple transition-colors duration-300"
@@ -58,7 +58,7 @@ const Footer = () => {
               >
                 <Linkedin size={18} />
               </a>
-            </div>
+            </div> */}
           </div>
 
           {/* Quick Links */}

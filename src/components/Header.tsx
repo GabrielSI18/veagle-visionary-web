@@ -47,7 +47,7 @@ const Header = () => {
     >
       <div className="container-custom flex items-center justify-between">
         {/* Logo */}
-        <Link to="/home" className="flex items-center">
+        <Link to="/" className="flex items-center">
           {/* Aqui está a imagem */}
           <img
             src="/Veagle_Preta.webp" // Caminho relativo da imagem dentro da pasta public
