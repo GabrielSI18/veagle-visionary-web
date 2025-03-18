@@ -52,7 +52,7 @@ const Header = () => {
           <img
             src="/Veagle_Preta.webp" // Caminho relativo da imagem dentro da pasta public
             alt="Logo Veagle"
-            className="h-14 w-32 object-contain" // Ajuste o tamanho para algo menor
+            className="h-10 w-32 object-contain" // Ajuste o tamanho para algo menor
           />
         </Link>
 
