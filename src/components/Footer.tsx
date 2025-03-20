@@ -1,3 +1,4 @@
+
 import React from "react";
 import { Link } from "react-router-dom";
 import { Facebook, Twitter, Instagram, Linkedin, ArrowUp } from "lucide-react";
@@ -115,44 +116,44 @@ const Footer = () => {
             <h3 className="text-lg font-semibold mb-4 text-white">Services</h3>
             <ul className="space-y-3">
               <li>
-                <a
-                  href="#"
+                <Link
+                  to="/services/landing-page"
                   className="text-gray-400 hover:text-white transition-colors duration-300"
                 >
                   Landing Page Creation
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="#"
+                <Link
+                  to="/services/paid-traffic"
                   className="text-gray-400 hover:text-white transition-colors duration-300"
                 >
                   Paid Traffic Management
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="#"
+                <Link
+                  to="/services/store-creation"
                   className="text-gray-400 hover:text-white transition-colors duration-300"
                 >
                   Online Store Creation
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="#"
+                <Link
+                  to="/services/store-management"
                   className="text-gray-400 hover:text-white transition-colors duration-300"
                 >
                   Online Store Management
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="#"
+                <Link
+                  to="/services/custom-development"
                   className="text-gray-400 hover:text-white transition-colors duration-300"
                 >
                   Custom Development
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
