@@ -1,6 +1,6 @@
 
 import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { Home, Info, Briefcase, Star, Mail, Menu, X } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { useIsMobile } from "@/hooks/use-mobile";
@@ -9,6 +9,7 @@ const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const isMobile = useIsMobile();
+  const location = useLocation();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -49,11 +50,10 @@ const Header = () => {
       <div className="container-custom flex items-center justify-between">
         {/* Logo */}
         <Link to="/" className="flex items-center">
-          {/* Aqui está a imagem */}
           <img
-            src="/Veagle_Preta.webp" // Caminho relativo da imagem dentro da pasta public
+            src="/Veagle_Preta.webp"
             alt="Logo Veagle"
-            className="h-10 w-32 object-contain" // Ajuste o tamanho para algo menor
+            className="h-10 w-32 object-contain"
           />
         </Link>
 

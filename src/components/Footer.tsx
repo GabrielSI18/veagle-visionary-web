@@ -30,36 +30,7 @@ const Footer = () => {
               Digital solutions to boost your business. We specialize in
               creating impactful digital experiences that drive results.
             </p>
-            {/* <div className="flex space-x-4">
-              <a
-                href="#"
-                className="h-10 w-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-veagle-purple transition-colors duration-300"
-                aria-label="Facebook"
-              >
-                <Facebook size={18} />
-              </a>
-              <a
-                href="#"
-                className="h-10 w-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-veagle-purple transition-colors duration-300"
-                aria-label="Twitter"
-              >
-                <Twitter size={18} />
-              </a>
-              <a
-                href="#"
-                className="h-10 w-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-veagle-purple transition-colors duration-300"
-                aria-label="Instagram"
-              >
-                <Instagram size={18} />
-              </a>
-              <a
-                href="#"
-                className="h-10 w-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-veagle-purple transition-colors duration-300"
-                aria-label="LinkedIn"
-              >
-                <Linkedin size={18} />
-              </a>
-            </div> */}
+            {/* Social media links section commented out */}
           </div>
 
           {/* Quick Links */}

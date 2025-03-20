@@ -79,10 +79,10 @@ const Services = () => {
               </p>
             </div>
             <div className="flex justify-center md:justify-end">
-              <a href="#contact" className="btn-primary">
+              <Link to="/#contact" className="btn-primary">
                 Get in touch
                 <ArrowRight size={18} />
-              </a>
+              </Link>
             </div>
           </div>
         </div>
