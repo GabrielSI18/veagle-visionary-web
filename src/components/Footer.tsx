@@ -69,12 +69,12 @@ const Footer = () => {
             </h3>
             <ul className="space-y-3">
               <li>
-                <a
-                  href="#home"
+                <Link
+                  to="/#home"
                   className="text-gray-400 hover:text-white transition-colors duration-300"
                 >
                   Home
-                </a>
+                </Link>
               </li>
               <li>
                 <Link
@@ -85,28 +85,28 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
-                <a
-                  href="#services"
+                <Link
+                  to="/#services"
                   className="text-gray-400 hover:text-white transition-colors duration-300"
                 >
                   Services
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="#testimonials"
+                <Link
+                  to="/#testimonials"
                   className="text-gray-400 hover:text-white transition-colors duration-300"
                 >
                   Testimonials
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="#contact"
+                <Link
+                  to="/#contact"
                   className="text-gray-400 hover:text-white transition-colors duration-300"
                 >
                   Contact
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -145,14 +145,6 @@ const Footer = () => {
                   className="text-gray-400 hover:text-white transition-colors duration-300"
                 >
                   Online Store Management
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to="/services/custom-development"
-                  className="text-gray-400 hover:text-white transition-colors duration-300"
-                >
-                  Custom Development
                 </Link>
               </li>
             </ul>
