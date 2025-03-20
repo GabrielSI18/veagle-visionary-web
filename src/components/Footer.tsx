@@ -21,9 +21,9 @@ const Footer = () => {
           <div>
             <div className="text-2xl font-bold text-white mb-4 flex items-center">
               <img
-                src="/Veagle_Branco_-_Real.webp" // Caminho relativo da imagem dentro da pasta public
+                src="/Veagle_Branco_-_Real.webp"
                 alt="Logo Veagle"
-                className="h-14 w-32 object-contain" // Ajuste o tamanho para algo menor
+                className="h-14 w-32 object-contain"
               />
             </div>
             <p className="text-gray-400 mb-6">
@@ -41,7 +41,7 @@ const Footer = () => {
             <ul className="space-y-3">
               <li>
                 <Link
-                  to="/#home"
+                  to="/"
                   className="text-gray-400 hover:text-white transition-colors duration-300"
                 >
                   Home

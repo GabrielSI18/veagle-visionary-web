@@ -25,7 +25,7 @@ const Header = () => {
   }, []);
 
   const links = [
-    { name: "Home", href: "/#home", icon: <Home size={18} /> },
+    { name: "Home", href: "/", icon: <Home size={18} /> },
     { name: "About", href: "/about", icon: <Info size={18} /> },
     { name: "Services", href: "/#services", icon: <Briefcase size={18} /> },
     { name: "Testimonials", href: "/#testimonials", icon: <Star size={18} /> },
