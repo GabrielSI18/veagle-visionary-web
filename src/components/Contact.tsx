@@ -47,12 +47,6 @@ const Contact = () => {
       link: "mailto:contact@veaglecompany.com"
     },
     {
-      icon: <Phone className="h-5 w-5 text-veagle-purple" />,
-      title: "Phone",
-      value: "+1 (555) 123-4567",
-      link: "tel:+15551234567"
-    },
-    {
       icon: <MapPin className="h-5 w-5 text-veagle-purple" />,
       title: "Address",
       value: "412 W 7th St STE 908, Clovis, NM 88101",

@@ -91,7 +91,6 @@ const PrivacyPolicy = () => {
             </p>
             <div className="mt-2">
               <p><strong>Email:</strong> contact@veaglecompany.com</p>
-              <p><strong>Phone:</strong> +1 (555) 123-4567</p>
               <p><strong>Address:</strong> 412 W 7th St STE 908, Clovis, NM 88101</p>
             </div>
           </section>

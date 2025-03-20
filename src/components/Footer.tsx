@@ -171,15 +171,6 @@ const Footer = () => {
                 </a>
               </li>
               <li className="flex items-start space-x-3">
-                <span className="text-veagle-light">Phone:</span>
-                <a
-                  href="tel:+15551234567"
-                  className="text-gray-400 hover:text-white transition-colors duration-300"
-                >
-                  +1 (555) 123-4567
-                </a>
-              </li>
-              <li className="flex items-start space-x-3">
                 <span className="text-veagle-light">Address:</span>
                 <span className="text-gray-400">
                   412 W 7th St STE 908, Clovis, NM 88101
