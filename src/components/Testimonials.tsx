@@ -3,7 +3,11 @@ import React, { useState, useEffect, useRef } from 'react';
 import { ChevronLeft, ChevronRight, Star } from 'lucide-react';
 import { cn } from '@/lib/utils';
 
-const Testimonials = () => {
+interface TestimonialsProps {
+  id: string; // Adicionando a propriedade id
+}
+
+const Testimonials: React.FC<TestimonialsProps> = ({ id }) => {
   const testimonials = [
     {
       name: "John Smith",

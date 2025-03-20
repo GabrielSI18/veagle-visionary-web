@@ -2,7 +2,11 @@
 import React from 'react';
 import { Search, Lightbulb, Rocket, BarChart } from 'lucide-react';
 
-const Methodology = () => {
+interface MethodologyProps {
+  id: string; // Adicionando a propriedade id
+}
+
+const Methodology: React.FC<MethodologyProps> = ({ id }) => {
   const steps = [
     {
       title: "Analysis",

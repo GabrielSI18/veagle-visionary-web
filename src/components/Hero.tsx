@@ -2,7 +2,11 @@
 import React, { useEffect, useRef } from 'react';
 import { ArrowRight, Monitor, BarChart2, ShoppingBag, Code } from 'lucide-react';
 
-const Hero = () => {
+interface HeroProps {
+  id: string; // Adicionando a propriedade id
+}
+
+const Hero: React.FC<HeroProps> = ({ id }) => {
   const logoRef = useRef<HTMLDivElement>(null);
   const iconsRef = useRef<(HTMLDivElement | null)[]>([]);
 

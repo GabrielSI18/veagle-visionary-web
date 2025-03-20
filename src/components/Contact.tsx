@@ -3,7 +3,11 @@ import React, { useState } from 'react';
 import { Mail, Phone, MapPin, Send } from 'lucide-react';
 import { toast } from 'sonner';
 
-const Contact = () => {
+interface ContactProps {
+  id: string; // Adicionando a propriedade id
+}
+
+const Contact: React.FC<ContactProps> = ({ id }) => {
   const [formData, setFormData] = useState({
     name: '',
     email: '',

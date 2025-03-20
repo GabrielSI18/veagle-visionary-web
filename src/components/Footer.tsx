@@ -1,6 +1,6 @@
-
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link as RouterLink } from "react-router-dom"; // Renomeando para evitar conflito
+import { Link as ScrollLink } from "react-scroll"; // Importando o ScrollLink
 import { Facebook, Twitter, Instagram, Linkedin, ArrowUp } from "lucide-react";
 
 const Footer = () => {
@@ -27,57 +27,65 @@ const Footer = () => {
               />
             </div>
             <p className="text-gray-400 mb-6">
-              Digital solutions to boost your business. We specialize in
-              creating impactful digital experiences that drive results.
+              Digital solutions to boost your business. We specialize in creating
+              impactful digital experiences that drive results.
             </p>
             {/* Social media links section commented out */}
           </div>
 
           {/* Quick Links */}
           <div>
-            <h3 className="text-lg font-semibold mb-4 text-white">
-              Quick Links
-            </h3>
+            <h3 className="text-lg font-semibold mb-4 text-white">Quick Links</h3>
             <ul className="space-y-3">
               <li>
-                <Link
-                  to="/"
-                  className="text-gray-400 hover:text-white transition-colors duration-300"
+                <ScrollLink
+                  to="home" // ID da seção Home
+                  smooth={true}
+                  duration={500}
+                  className="text-gray-400 hover:text-white transition-colors duration-300 cursor-pointer"
                 >
                   Home
-                </Link>
+                </ScrollLink>
               </li>
               <li>
-                <Link
-                  to="/about"
-                  className="text-gray-400 hover:text-white transition-colors duration-300"
+                <ScrollLink
+                  to="about" // ID da seção About
+                  smooth={true}
+                  duration={500}
+                  className="text-gray-400 hover:text-white transition-colors duration-300 cursor-pointer"
                 >
                   About Us
-                </Link>
+                </ScrollLink>
               </li>
               <li>
-                <Link
-                  to="/#services"
-                  className="text-gray-400 hover:text-white transition-colors duration-300"
+                <ScrollLink
+                  to="services" // ID da seção Services
+                  smooth={true}
+                  duration={500}
+                  className="text-gray-400 hover:text-white transition-colors duration-300 cursor-pointer"
                 >
                   Services
-                </Link>
+                </ScrollLink>
               </li>
               <li>
-                <Link
-                  to="/#testimonials"
-                  className="text-gray-400 hover:text-white transition-colors duration-300"
+                <ScrollLink
+                  to="testimonials" // ID da seção Testimonials
+                  smooth={true}
+                  duration={500}
+                  className="text-gray-400 hover:text-white transition-colors duration-300 cursor-pointer"
                 >
                   Testimonials
-                </Link>
+                </ScrollLink>
               </li>
               <li>
-                <Link
-                  to="/#contact"
-                  className="text-gray-400 hover:text-white transition-colors duration-300"
+                <ScrollLink
+                  to="contact" // ID da seção Contact
+                  smooth={true}
+                  duration={500}
+                  className="text-gray-400 hover:text-white transition-colors duration-300 cursor-pointer"
                 >
                   Contact
-                </Link>
+                </ScrollLink>
               </li>
             </ul>
           </div>
@@ -87,36 +95,36 @@ const Footer = () => {
             <h3 className="text-lg font-semibold mb-4 text-white">Services</h3>
             <ul className="space-y-3">
               <li>
-                <Link
+                <RouterLink
                   to="/services/landing-page"
                   className="text-gray-400 hover:text-white transition-colors duration-300"
                 >
                   Landing Page Creation
-                </Link>
+                </RouterLink>
               </li>
               <li>
-                <Link
+                <RouterLink
                   to="/services/paid-traffic"
                   className="text-gray-400 hover:text-white transition-colors duration-300"
                 >
                   Paid Traffic Management
-                </Link>
+                </RouterLink>
               </li>
               <li>
-                <Link
+                <RouterLink
                   to="/services/store-creation"
                   className="text-gray-400 hover:text-white transition-colors duration-300"
                 >
                   Online Store Creation
-                </Link>
+                </RouterLink>
               </li>
               <li>
-                <Link
+                <RouterLink
                   to="/services/store-management"
                   className="text-gray-400 hover:text-white transition-colors duration-300"
                 >
                   Online Store Management
-                </Link>
+                </RouterLink>
               </li>
             </ul>
           </div>
@@ -150,12 +158,18 @@ const Footer = () => {
           </p>
 
           <div className="flex space-x-6">
-            <Link to="/privacy-policy" className="text-gray-500 hover:text-white text-sm transition-colors duration-300">
+            <RouterLink
+              to="/privacy-policy"
+              className="text-gray-500 hover:text-white text-sm transition-colors duration-300"
+            >
               Privacy Policy
-            </Link>
-            <Link to="/terms-of-service" className="text-gray-500 hover:text-white text-sm transition-colors duration-300">
+            </RouterLink>
+            <RouterLink
+              to="/terms-of-service"
+              className="text-gray-500 hover:text-white text-sm transition-colors duration-300"
+            >
               Terms of Service
-            </Link>
+            </RouterLink>
           </div>
         </div>
       </div>

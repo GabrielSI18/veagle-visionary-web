@@ -1,9 +1,12 @@
-
 import React from 'react';
 import { Layout, BarChart2, ShoppingBag, Store, ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
-const Services = () => {
+interface ServicesProps {
+  id: string; // Adicionando a propriedade id
+}
+
+const Services: React.FC<ServicesProps> = ({ id }) => {
   const services = [
     {
       title: "Landing Page Creation",
@@ -32,7 +35,7 @@ const Services = () => {
   ];
 
   return (
-    <section id="services" className="section-padding relative">
+    <section id={id} className="section-padding relative"> {/* Passando o id para o elemento raiz */}
       <div className="absolute inset-0 bg-gradient-to-t from-white via-purple-50 to-white -z-10"></div>
       <div className="container-custom">
         <div className="text-center max-w-3xl mx-auto mb-16">

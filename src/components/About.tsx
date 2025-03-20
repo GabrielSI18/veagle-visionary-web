@@ -3,7 +3,11 @@ import React from 'react';
 import { Eye, Award, Heart, ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
-const About = () => {
+interface AboutProps {
+  id: string; // Adicionando a propriedade id
+}
+
+const About: React.FC<AboutProps> = ({ id }) => {
   const values = [
     {
       title: "Clear Vision",
